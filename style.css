@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=PT+Mono&family=PT+Serif:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=PT+Mono&family=PT+Serif&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+body {
+    max-width: 920px;
+    display: grid;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-family: "Space Mono";
+}
+
+.header {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+@media (max-width: 585px) {
+    .header {
+        flex-direction: column;
+        margin-top: 60px;
+        gap: 32px;
+    }
+}
+
+.header__title {
+    flex: 1 0 auto;
+    font-family: 'PT Serif';
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -0.045em;
+}
+
+.header__content {
+    max-width: 440px;
+}
+
+.content__title {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.13rem;
+    text-transform: uppercase;
+    line-height: 27px;
+}
+
+.content__desc {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.13rem;
+    line-height: 27px;
+}
+
+@media (max-width: 585px) {
+    .content__desc {
+        font-size: 1rem;
+    }
+}
+
+.main {
+    margin-top: 95px;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 585px) {
+    .main {
+        margin-top: 64px;
+    }
+}
+
+.team {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (min-width: 873px) {
+    .team :nth-of-type(3n+2) {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 872px) {
+    .team {
+        justify-content: space-evenly;
+    }
+
+    .team :nth-of-type(even) {
+        margin-top: 56px;
+    }
+}
+
+.card__conteiner {
+    display: flex;
+}
+
+.card__desc {
+    font-family: 'PT Serif';
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: .75rem;
+    padding-left: 5px;
+}
+
+.card__name {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.13rem;
+    line-height: 27px;
+    padding-top: 10px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer__copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: .75rem;
+    color: #A9A9A9;
+    margin-bottom: 30px;
+}
+
+.copyright__owner {
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.copyright__owner a:hover {
+    cursor: pointer;
+}
